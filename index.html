@@ -111,7 +111,11 @@
       50% { transform: scale(1.08); }
       100% { transform: scale(1); }
     }
-  @media (max-width: 768px) {
+  .tarot-list-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 768px) {
       .about-grid {
         display: grid !important;
         grid-template-columns: 1fr !important;
@@ -172,7 +176,7 @@
   <section style="padding: 60px 40px; max-width: 1000px; margin: 0 auto;">
     <h2 style="text-align:center; font-size:32px;">Lecturas de Tarot para Sanar, Entender y Avanzar</h2>
     <p>Tu intuición ya lo siente. El tarot solo te lo confirma. Obtén claridad sobre tu relación, tu futuro y lo que necesitas dejar atrás para sanar.</p>
-    <div class="tarot-list-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 25px;">
+    <div class="tarot-list-grid" style="display:grid; gap: 20px; margin-top: 25px;">
       <ul style="margin:0; padding-left: 20px; line-height:1.9;">
         <li style="list-style:none; margin-left:0;">✦ Lectura amorosa: ¿Te ama? ¿Volverá? ¿Hay alguien más?</li>
         <li style="list-style:none; margin-left:0;">✦ ¿Cortar o seguir? Consulta para decisiones difíciles.</li>
