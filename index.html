@@ -116,6 +116,13 @@
     }
 
     @media (max-width: 768px) {
+      .testimonials-track img {
+        width: min(100%, 320px) !important;
+        max-width: 100% !important;
+      }
+      .testimonials-track {
+        gap: 12px !important;
+      }
       .about-grid {
         display: grid !important;
         grid-template-columns: 1fr !important;
@@ -135,7 +142,30 @@
         padding: 40px 20px !important;
       }
     }
-  </style>
+  .testimonials-wrap {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 25px;
+    }
+    .testimonials-track {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      animation: scroll-testimonials 24s linear infinite;
+    }
+    .testimonials-track img {
+      width: calc((1000px - 40px) / 3);
+      max-width: 300px;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+    @keyframes scroll-testimonials {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    </style>
 </head>
 <body>
   <header>
@@ -192,6 +222,24 @@
     </div>
   </section>
 
+  <section style="padding: 60px 40px; max-width: 1000px; margin: 0 auto;">
+    <h2 style="font-size:32px; text-align:center;">Testimonios</h2>
+    <div class="testimonials-wrap">
+      <div class="testimonials-track">
+        <img src="images/whatsapp-image-2025-09-03-at-11.44.32_13225e61.webp" alt="Testimonio WhatsApp 1">
+        <img src="images/whatsapp-image-2025-09-03-at-11.44.32_22b825a0.webp" alt="Testimonio WhatsApp 2">
+        <img src="images/whatsapp-image-2025-09-03-at-11.44.32_f57b52bd.webp" alt="Testimonio WhatsApp 3">
+        <img src="images/whatsapp-image-2025-09-03-at-12.39.28_3fe9325b.webp" alt="Testimonio WhatsApp 4">
+        <img src="images/whatsapp-image-2025-09-03-at-12.56.08_73d271a7.webp" alt="Testimonio WhatsApp 5">
+        <img src="images/whatsapp-image-2025-09-03-at-11.44.32_13225e61.webp" alt="Testimonio WhatsApp 1">
+        <img src="images/whatsapp-image-2025-09-03-at-11.44.32_22b825a0.webp" alt="Testimonio WhatsApp 2">
+        <img src="images/whatsapp-image-2025-09-03-at-11.44.32_f57b52bd.webp" alt="Testimonio WhatsApp 3">
+        <img src="images/whatsapp-image-2025-09-03-at-12.39.28_3fe9325b.webp" alt="Testimonio WhatsApp 4">
+        <img src="images/whatsapp-image-2025-09-03-at-12.56.08_73d271a7.webp" alt="Testimonio WhatsApp 5">
+      </div>
+    </div>
+  </section>
+
   <a href="https://wa.me/5216634571494" class="whatsapp-float" target="_blank" rel="noopener">
     <div class="whatsapp-tooltip">¿Puedo ayudarte?</div>
     <svg viewBox="0 0 32 32">
@@ -200,3 +248,4 @@
   </a>
 </body>
 </html>
+
