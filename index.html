@@ -112,8 +112,24 @@
       100% { transform: scale(1); }
     }
   @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr !important; }
-      .tarot-list-grid { grid-template-columns: 1fr !important; }
+      .about-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+      .about-grid img {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+      }
+      .tarot-list-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+      }
+      .about, .reviews {
+        padding: 40px 20px !important;
+      }
     }
   </style>
 </head>
