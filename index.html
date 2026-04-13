@@ -79,7 +79,47 @@
     90%, 100% { transform: translateX(-3069px); }
   }
   @media (max-width: 768px) {
-    .testimonials-wrap { overflow: hidden; padding: 0; width:100%; }
+    nav {
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .about-grid {
+      grid-template-columns: 1fr !important;
+      gap: 20px;
+    }
+    .about-grid img {
+      width: 100% !important;
+      max-width: 320px !important;
+      justify-self: center;
+    }
+    .tarot-list-grid {
+      grid-template-columns: 1fr !important;
+    }
+    #contacto > div {
+      display: grid;
+      grid-template-columns: 1fr !important;
+      gap: 20px;
+    }
+    .testimonials-wrap {
+      width: 100%;
+      overflow: hidden;
+    }
+    .testimonials-track {
+      gap: 0 !important;
+    }
+    .testimonials-track img {
+      width: 100vw !important;
+      max-width: 100vw !important;
+      flex: 0 0 100vw;
+      object-fit: cover;
+    }
+    .hero {
+      padding: 50px 20px;
+    }
+    .hero h2 {
+      font-size: 38px;
+    }
+  }
     .testimonials-track { gap: 0 !important; }
     #contacto > div { grid-template-columns: 1fr !important; }
     .about-grid { grid-template-columns: 1fr; }
@@ -189,4 +229,3 @@
   </a>
 </body>
 </html>
-
